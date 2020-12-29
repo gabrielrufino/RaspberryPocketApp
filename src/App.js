@@ -5,6 +5,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {Text, StatusBar} from 'react-native';
 
 import BottomNavigator from './BottomNavigator';
+import pallete from './styles/pallete';
 
 const App = () => {
   useEffect(() => {
@@ -17,7 +18,7 @@ const App = () => {
 
   return (
     <>
-      <StatusBar barStyle="dark-content" />
+      <StatusBar barStyle="light-content" backgroundColor={pallete.primary} />
       <Text>Raspberry Pocket</Text>
       <NavigationContainer>
         <BottomNavigator />
