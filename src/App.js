@@ -19,7 +19,6 @@ const App = () => {
   return (
     <>
       <StatusBar barStyle="light-content" backgroundColor={pallete.primary} />
-      <Text>Raspberry Pocket</Text>
       <NavigationContainer>
         <BottomNavigator />
       </NavigationContainer>
