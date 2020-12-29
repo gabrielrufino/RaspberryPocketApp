@@ -1,8 +1,15 @@
+export const red = '#C51A4A';
+export const green = '#6CC04A';
+export const white = '#FFFFFF';
+export const black = '#000000';
+export const primary = red;
+export const secondary = white;
+
 export default {
-  red: '#C51A4A',
-  green: '#6CC04A',
-  white: '#FFFFFF',
-  black: '#000000',
-  primary: this.red,
-  secondary: this.white,
+  red,
+  green,
+  white,
+  black,
+  primary,
+  secondary,
 };
