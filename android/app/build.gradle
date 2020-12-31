@@ -131,7 +131,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.raspberrypocketapp"
+        applicationId "com.raspberrypocket"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

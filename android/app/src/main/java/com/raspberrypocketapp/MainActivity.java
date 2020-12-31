@@ -1,4 +1,4 @@
-package com.raspberrypocketapp;
+package com.raspberrypocket;
 
 import com.facebook.react.ReactActivity;
 
