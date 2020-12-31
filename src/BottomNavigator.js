@@ -2,7 +2,7 @@ import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 import BottomNavigatorIcon from './components/BottomNavigatorIcon';
-import {Commands, Status} from './screens';
+import {Workflows, Status} from './screens';
 
 const Tab = createBottomTabNavigator();
 
@@ -24,8 +24,8 @@ const BottomNavigator = () => {
         }}
       />
       <Tab.Screen
-        name="Commands"
-        component={Commands}
+        name="Workflows"
+        component={Workflows}
         options={{
           tabBarIcon: ({color, size}) => (
             <BottomNavigatorIcon name="terminal" color={color} size={size} />
