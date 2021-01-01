@@ -1,6 +1,7 @@
 import 'react-native-gesture-handler';
 
 import React, {useEffect} from 'react';
+import SplashScreen from 'react-native-splash-screen'
 import {NavigationContainer} from '@react-navigation/native';
 import {Text, StatusBar} from 'react-native';
 
@@ -11,7 +12,7 @@ const App = () => {
   useEffect(() => {
     import('./services/server').then((server) => {
       server.socket.on('connect', () => {
-        console.log('Connected to the server');
+        SplashScreen.hide();
       });
     });
   }, []);
