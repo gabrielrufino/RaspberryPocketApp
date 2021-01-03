@@ -20,7 +20,6 @@ const Status = () => {
     server.socket.emit('request:status');
 
     server.socket.on('response:status', (data) => {
-      console.log(data);
       setStatusList([
         {
           icon: 'thermometer-three-quarters',
