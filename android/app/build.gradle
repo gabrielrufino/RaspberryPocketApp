@@ -1,4 +1,6 @@
 apply plugin: "com.android.application"
+apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.gradle"
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
 
 import com.android.build.OutputFile
 
@@ -129,11 +131,21 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.raspberrypocketapp"
+        applicationId "com.raspberrypocket"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+    }
+    signingConfigs {
+        release {
+            if (project.hasProperty('MYAPP_UPLOAD_STORE_FILE')) {
+                storeFile file(APPKEY_STORE_FILE)
+                storePassword APPKEY_STORE_PASSWORD
+                keyAlias APPKEY_KEY_ALIAS
+                keyPassword APPKEY_KEY_PASSWORD
+            }
+        }
     }
     splits {
         abi {

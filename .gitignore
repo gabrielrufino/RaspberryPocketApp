@@ -57,3 +57,7 @@ buck-out/
 
 # CocoaPods
 /ios/Pods/
+
+# Others
+.env
+!/android/app/appkey.keystore
