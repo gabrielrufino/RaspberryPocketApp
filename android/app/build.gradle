@@ -137,6 +137,16 @@ android {
         versionCode 1
         versionName "1.0"
     }
+    signingConfigs {
+        release {
+            if (project.hasProperty('MYAPP_UPLOAD_STORE_FILE')) {
+                storeFile file(APPKEY_STORE_FILE)
+                storePassword APPKEY_STORE_PASSWORD
+                keyAlias APPKEY_KEY_ALIAS
+                keyPassword APPKEY_KEY_PASSWORD
+            }
+        }
+    }
     splits {
         abi {
             reset()
