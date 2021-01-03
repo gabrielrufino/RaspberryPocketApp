@@ -60,4 +60,4 @@ buck-out/
 
 # Others
 .env
-!/android/appkey.keystore
+!/android/app/appkey.keystore
